@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Formulario</h1>
+
+<form>
+
+    <fieldset>
+        <legend>Datos Básicos</legend>
+
+        <label>Nombre completo:</label>
+        <input type="text" required>
+
+        <label>Edad:</label>
+        <input type="number" min="0" required>
+
+        <label>Correo electrónico:</label>
+        <input type="email" required>
+    </fieldset>
+
+    <fieldset>
+        <label>Género:</label><br>
+        <input type="radio" name="genero"> Masculino<br>
+        <input type="radio" name="genero"> Femenino<br>
+        <input type="radio" name="genero"> Otro<br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox"> Hacer Deporte<br>
+        <input type="checkbox"> Escuchar Música<br>
+        <input type="checkbox"> Jugar Videojuegos<br>
+        <input type="checkbox"> Lectura<br><br>
+
+        <label>Ciudad:</label>
+        <select>
+            <option>Seleccione una opción</option>
+            <option>Flandes</option>
+            <option>Girardot</option>
+            <option>Espinal</option>
+            <option>Otro</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Información Adicional</legend>
+
+        <label>Descripción personal:</label>
+        <textarea rows="4" placeholder="Escribe algo sobre ti..."></textarea>
+    </fieldset>
+
+    <div class="buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </div>
+
+</form>
+
+</div>
+
+</body>
+</html>
