@@ -2,51 +2,93 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Hoja de Vida</title>
+    <title>Formulario</title>
 </head>
 
 <body>
 
-    <!-- CABECERA -->
-    <h1>Cristian Mauricio Grimaldo Nuñez</h1>
-    <p>Estudiante de Ingeniería de Software</p>
-    <p>📞 3183430834</p>
-    <p>✉ cristianmgn10@gmail.com</p>
-    <p>📍 Flandes, Tolima</p>
+    <h1 align="center">Formulario</h1>
 
-    <img src="fotos/Foto.jpeg" alt="Foto" width="150">
+    <form>
 
-    <hr>
+        <table border="1" align="center" cellpadding="10" width="50%">
 
-    <!-- PERFIL -->
-    <h2>Perfil</h2>
-    <p>
-        Soy una persona comprometida, dedicada a lo que me gusta y orientada al cumplimiento de objetivos.
-        Tengo interés en crecer personal y profesionalmente, especialmente en el área tecnológica.
-    </p>
+            <!-- DATOS BÁSICOS -->
+            <tr>
+                <td colspan="2" align="center">
+                    <b>Datos Básicos</b>
+                </td>
+            </tr>
 
-    <!-- EDUCACIÓN -->
-    <h2>Educación</h2>
-    <ul>
-        <li>Bachillerato - Institución Educativa Caldas</li>
-        <li>Ingeniería en Software - Universidad de Cundinamarca</li>
-    </ul>
+            <tr>
+                <td>Nombre completo:</td>
+                <td><input type="text" required></td>
+            </tr>
 
-    <!-- HABILIDADES -->
-    <h2>Habilidades</h2>
-    <ul>
-        <li>Liderazgo</li>
-        <li>Trabajo en equipo</li>
-        <li>Comunicación efectiva</li>
-        <li>Aprendizaje constante</li>
-    </ul>
+            <tr>
+                <td>Edad:</td>
+                <td><input type="number" min="0" required></td>
+            </tr>
 
-    <!-- IDIOMAS -->
-    <h2>Idiomas</h2>
-    <ul>
-        <li>Español - Nativo</li>
-        <li>Inglés - Básico</li>
-    </ul>
+            <tr>
+                <td>Correo electrónico:</td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <!-- GÉNERO -->
+            <tr>
+                <td>Género:</td>
+                <td>
+                    <input type="radio" name="genero"> Masculino<br>
+                    <input type="radio" name="genero"> Femenino<br>
+                    <input type="radio" name="genero"> Otro
+                </td>
+            </tr>
+
+            <!-- HOBBIES -->
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox"> Hacer Deporte<br>
+                    <input type="checkbox"> Escuchar Música<br>
+                    <input type="checkbox"> Jugar Videojuegos<br>
+                    <input type="checkbox"> Lectura
+                </td>
+            </tr>
+
+            <!-- CIUDAD -->
+            <tr>
+                <td>Ciudad:</td>
+                <td>
+                    <select>
+                        <option>Seleccione una opción</option>
+                        <option>Flandes</option>
+                        <option>Girardot</option>
+                        <option>Espinal</option>
+                        <option>Otro</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- DESCRIPCIÓN -->
+            <tr>
+                <td>Descripción:</td>
+                <td>
+                    <textarea rows="4" cols="30" placeholder="Escribe algo sobre ti..."></textarea>
+                </td>
+            </tr>
+
+            <!-- BOTONES -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
 
 </body>
 </html>
