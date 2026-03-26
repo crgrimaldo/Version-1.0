@@ -1,135 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Hoja de Vida</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 10;
-    background-color: #f0f2f5;
-}
-
-.container {
-    width: 80%;
-    margin: 30px auto;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.header {
-    background: #2c7da0;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-text {
-    max-width: 50%;
-}
-
-.header img {
-    width: 150px;
-}
-
-.content {
-    display: flex;
-}
-
-.left {
-    width: 60%;
-    padding: 20px;
-    border-right: 2px solid #eee;
-}
-
-.right {
-    width: 40%;
-    padding: 20px;
-    background: #f8f9fa;
-}
-
-h2 {
-    color: #2c7da0;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-p {
-    color: #000000;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida</title>
 </head>
 
-<body>
+<body style="font-family: Arial; margin: 20px; background-color: #f0f2f5;">
 
-<div class="container">
+    <table width="100%" cellpadding="10" style="border-collapse: collapse; background-color: white;">
 
-    <!-- CABECERA -->
-    <div class="header">
-        <div class="header-text">
-            <h1>Cristian Mauricio Grimaldo Nuñez</h1>
-            <p>Estudiante de Ingeniería de Software</p>
-            <p>📞 3183430834 | ✉ cristianmgn10@gmail.com</p>
-            <p>📍 Flandes, Tolima</p>
-        </div>
-        <img src="fotos/Foto.jpeg">
-    </div>
+        <!-- CABECERA -->
+        <tr style="background-color: #2c7da0; color: white;">
+            <td colspan="2" align="center">
+                <h1 style="margin: 5px;">Cristian Mauricio Grimaldo Nuñez</h1>
+                <p style="margin: 5px;">Estudiante de Ingeniería de Software</p>
+                <p style="margin: 5px;">📞 3183430834 | ✉ cristianmgn10@gmail.com</p>
+                <p style="margin: 5px;">📍 Flandes, Tolima</p>
+                <img src="fotos/Foto.jpeg" width="150" style="margin-top: 10px; border-radius: 10px;">
+            </td>
+        </tr>
 
-    <!-- CONTENIDO -->
-    <div class="content">
+        <!-- CONTENIDO -->
+        <tr>
 
-        <!-- IZQUIERDA -->
-        <div class="left">
+            <!-- IZQUIERDA -->
+            <td width="60%" valign="top" style="padding: 20px;">
 
-            <h2>Perfil</h2>
-            <p>
-                Soy una persona comprometida, dedicada a lo que me gusta y orientada al cumplimiento de objetivos. 
-                Tengo interés en crecer personal y profesionalmente, especialmente en el área tecnológica.
-            </p>
+                <h2 style="color: #2c7da0; border-bottom: 2px solid #ccc;">Perfil</h2>
+                <p>
+                    Soy una persona comprometida, dedicada a lo que me gusta y orientada al cumplimiento de objetivos.
+                    Tengo interés en crecer personal y profesionalmente, especialmente en el área tecnológica.
+                </p>
 
-            <h2>Educación</h2>
-            <ul>
-                <li>Bachillerato - Institución Educativa Caldas</li>
-                <li>Ingeniería en Software - Universidad de Cundinamarca</li>
-            </ul>
+                <h2 style="color: #2c7da0; border-bottom: 2px solid #ccc;">Educación</h2>
+                <ul>
+                    <li>Bachillerato - Institución Educativa Caldas</li>
+                    <li>Ingeniería en Software - Universidad de Cundinamarca</li>
+                </ul>
 
-        </div>
+            </td>
 
-        <!-- DERECHA -->
-        <div class="right">
+            <!-- DERECHA -->
+            <td width="40%" valign="top" style="background-color: #e7f1f8; padding: 20px;">
 
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Liderazgo</li>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación efectiva</li>
-                <li>Aprendizaje constante</li>
-            </ul>
+                <h2 style="color: #2c7da0; border-bottom: 2px solid #ccc;">Habilidades</h2>
+                <ul>
+                    <li>Liderazgo</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Aprendizaje constante</li>
+                </ul>
 
-            <h2>Idiomas</h2>
-            <ul>
-                <li>Español - Nativo</li>
-                <li>Inglés - Básico</li>
-            </ul>
+                <h2 style="color: #2c7da0; border-bottom: 2px solid #ccc;">Idiomas</h2>
+                <ul>
+                    <li>Español - Nativo</li>
+                    <li>Inglés - Básico</li>
+                </ul>
 
-        </div>
+            </td>
 
-    </div>
+        </tr>
 
-</div>
+    </table>
 
 </body>
 </html>

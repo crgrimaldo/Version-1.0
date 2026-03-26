@@ -1,135 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Formulario</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #eef2f7;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 40%;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-h1 {
-    text-align: center;
-    color: #2c3e50;
-}
-
-fieldset {
-    border: none;
-    margin-bottom: 20px;
-}
-
-legend {
-    font-weight: bold;
-    color: #3498db;
-    margin-bottom: 10px;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
-}
-
-.buttons {
-    text-align: center;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida</title>
 </head>
 
 <body>
 
-<div class="container">
+    <!-- CABECERA -->
+    <h1>Cristian Mauricio Grimaldo Nuñez</h1>
+    <p>Estudiante de Ingeniería de Software</p>
+    <p>📞 3183430834</p>
+    <p>✉ cristianmgn10@gmail.com</p>
+    <p>📍 Flandes, Tolima</p>
 
-<h1>Formulario</h1>
+    <img src="fotos/Foto.jpeg" alt="Foto" width="150">
 
-<form>
+    <hr>
 
-    <fieldset>
-        <legend>Datos Básicos</legend>
+    <!-- PERFIL -->
+    <h2>Perfil</h2>
+    <p>
+        Soy una persona comprometida, dedicada a lo que me gusta y orientada al cumplimiento de objetivos.
+        Tengo interés en crecer personal y profesionalmente, especialmente en el área tecnológica.
+    </p>
 
-        <label>Nombre completo:</label>
-        <input type="text" required>
+    <!-- EDUCACIÓN -->
+    <h2>Educación</h2>
+    <ul>
+        <li>Bachillerato - Institución Educativa Caldas</li>
+        <li>Ingeniería en Software - Universidad de Cundinamarca</li>
+    </ul>
 
-        <label>Edad:</label>
-        <input type="number" min="0" required>
+    <!-- HABILIDADES -->
+    <h2>Habilidades</h2>
+    <ul>
+        <li>Liderazgo</li>
+        <li>Trabajo en equipo</li>
+        <li>Comunicación efectiva</li>
+        <li>Aprendizaje constante</li>
+    </ul>
 
-        <label>Correo electrónico:</label>
-        <input type="email" required>
-    </fieldset>
-
-    <fieldset>
-        <label>Género:</label><br>
-        <input type="radio" name="genero"> Masculino<br>
-        <input type="radio" name="genero"> Femenino<br>
-        <input type="radio" name="genero"> Otro<br><br>
-
-        <label>Hobbies:</label><br>
-        <input type="checkbox"> Hacer Deporte<br>
-        <input type="checkbox"> Escuchar Música<br>
-        <input type="checkbox"> Jugar Videojuegos<br>
-        <input type="checkbox"> Lectura<br><br>
-
-        <label>Ciudad:</label>
-        <select>
-            <option>Seleccione una opción</option>
-            <option>Flandes</option>
-            <option>Girardot</option>
-            <option>Espinal</option>
-            <option>Otro</option>
-        </select>
-    </fieldset>
-
-    <fieldset>
-        <legend>Información Adicional</legend>
-
-        <label>Descripción personal:</label>
-        <textarea rows="4" placeholder="Escribe algo sobre ti..."></textarea>
-    </fieldset>
-
-    <div class="buttons">
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
-    </div>
-
-</form>
-
-</div>
+    <!-- IDIOMAS -->
+    <h2>Idiomas</h2>
+    <ul>
+        <li>Español - Nativo</li>
+        <li>Inglés - Básico</li>
+    </ul>
 
 </body>
 </html>
